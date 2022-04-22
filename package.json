@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compilar": "npx sass sass/sass.scss style/style.css",
     "test": "jest",
     "prepare": "husky install"
   },
