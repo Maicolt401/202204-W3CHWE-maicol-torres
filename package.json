@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compilar": "sass sass/sass.scss style/style.css --watch",
+    "compilar": "sass sass/sass.scss style/style.css",
     "test": "jest",
     "prepare": "husky install"
   },
