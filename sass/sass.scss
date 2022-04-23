@@ -1,3 +1,60 @@
 body {
-  background-color: aquamarine;
+  background-color: black;
+}
+
+div {
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.characters-list {
+  flex-wrap: nowrap;
+  max-width: 100%;
+  min-height: 100vh;
+  align-items: center;
+}
+.character {
+  width: 20%;
+  flex-basis: auto;
+  flex-grow: 0;
+}
+.character__name {
+  height: 60px;
+}
+.character__picture {
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+}
+.character__card {
+  position: relative;
+  border: none;
+  background-color: red;
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.character:nth-child(even) .character__overlay {
+  top: 100%;
+}
+
+.character__action {
+  background-color: #67331e;
+  color: #fff;
+  width: 80%;
+}
+
+.comunications.on {
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+header {
+  border: 5px solid red;
+  display: flex;
+  justify-content: center;
+  ul {
+  }
 }
