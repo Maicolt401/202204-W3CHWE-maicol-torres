@@ -25,8 +25,8 @@ class MainComponent extends Component {
 
   render() {
     this.element.innerHTML = `
-     <ul class="characters-list row list-unstyled">
-                 <li class="character col-12 col-sm-4">
+      <ul class="characters-list row list-unstyled">
+                  <li class="character col-12 col-sm-4">
                       <div class="card character__card ">
                         <img
                           src="/pokemon-pikachu.gif"
@@ -122,8 +122,8 @@ class MainComponent extends Component {
                       
                         </div>
                       </div>
-                 </li> 
-     </ul>
+                  </li> 
+      </ul>
     `;
   }
 }

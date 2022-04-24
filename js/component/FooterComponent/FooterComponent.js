@@ -12,8 +12,8 @@ class FooterComponent extends Component {
       <nav>
         <ul>
           <li><a href="">Previus</a>
-           <a href="">1</a>
-           <a href="">1/8.000</a>
+            <a href="">1</a>
+            <a href="">1/8.000</a>
           </li>
         </ul>
       </nav>
