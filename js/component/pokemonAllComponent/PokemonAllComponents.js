@@ -16,8 +16,8 @@ class PokemonAllComponent extends Component {
 
   render() {
     this.element.innerHTML = `
-     <ul class="characters-list list-unstyled">
-         <li class="character col-12 col-sm-4">
+       <ul class="characters-list list-unstyled">
+           <li class="character col-12 col-sm-4">
                 <div class="card character__card ">
                         <img
                           class="character__picture card-img-top"
@@ -35,8 +35,8 @@ class PokemonAllComponent extends Component {
                               <button>agregar</button><button>eliminar</button>
                       </div>
                   </div>
-         </li>
-    </ul>     
+           </li>
+        </ul>     
   `;
   }
 }
