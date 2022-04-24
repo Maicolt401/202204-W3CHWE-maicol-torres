@@ -35,9 +35,9 @@ class PokemonAllComponent extends Component {
                               <button>agregar</button><button>eliminar</button>
                       </div>
                   </div>
-          </li>
-     </ul>     
-      `;
+         </li>
+    </ul>     
+  `;
   }
 }
 
