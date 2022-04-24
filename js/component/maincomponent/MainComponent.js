@@ -8,7 +8,7 @@ class MainComponent extends Component {
 
   render() {
     this.element.innerHTML = `
-        <header class="header">
+          <header class="header">
       <h1>POKEMOS TO GUAPOS</h1>
     
       <navc class="header__list">
@@ -117,9 +117,9 @@ class MainComponent extends Component {
                         </div>
                       </div>
                   </li> 
-   </ul>
-   <footer>
-       <nav>
+     </ul>
+    <footer>
+      <nav>
         <ul>
           <li><a href="">Previus</a>
           <a href="">1</a>
@@ -127,7 +127,6 @@ class MainComponent extends Component {
         </ul>
       </nav>
     </footer>
-
     `;
   }
 }
