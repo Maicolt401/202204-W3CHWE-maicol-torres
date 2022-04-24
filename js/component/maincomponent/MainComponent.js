@@ -1,26 +1,32 @@
 import Component from "../Component.js";
 
+const apiUrl = "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0";
+
+const getPokemon = async () => {
+  const response = await fetch(`${apiUrl}`);
+  const pokemonUrl = await response.json();
+  return pokemonUrl;
+};
+
+for (let i = 0; i < 20; i++) {
+  (async () => {
+    const pokemonAll = await getPokemon();
+    return pokemonAll;
+  })();
+}
+
 class MainComponent extends Component {
-  constructor(parentElement) {
+  name;
+  constructor(parentElement, name) {
     super(parentElement, "main", "pokemon-card");
+    this.name = name;
     this.render();
   }
 
   render() {
     this.element.innerHTML = `
-          <header class="header">
-      <h1>POKEMOS TO GUAPOS</h1>
-    
-      <navc class="header__list">
-        <ul>
-          <li><a href="">POKEMOS MAMADISIMOS</a></li>
-          <li><a href="">MIS POKEMOS TOO GUAPOS</a></li>
-          <li><a href="">POKEMOS MODIFICADOS</a></li>
-        </ul>
-      </nav> 
-    </header>
      <ul class="characters-list row list-unstyled">
-                  <li class="character col-12 col-sm-4">
+                 <li class="character col-12 col-sm-4">
                       <div class="card character__card ">
                         <img
                           src="/pokemon-pikachu.gif"
@@ -28,7 +34,7 @@ class MainComponent extends Component {
                           class="character__picture card-img-top"
                         />
                         <div class="card-body">
-                          <h2 class="character__name card-title h4">PICHACHU</h2>
+                          <h2 class="character__name card-title h4">${this.name}</h2>
                       
                             <ul class="list-unstyled">
                             
@@ -118,16 +124,8 @@ class MainComponent extends Component {
                       </div>
                  </li> 
      </ul>
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="">Previus</a>
-          <a href="">1</a>
-        <a href="">1/8.000</a></li>
-        </ul>
-      </nav>
-    </footer>
     `;
   }
 }
+
 export default MainComponent;
