@@ -1,4 +1,9 @@
-import component from "./component/Component.js";
+import FooterComponent from "./component/FooterComponent/FooterComponent.js";
+import HeaderComponent from "./component/headerComponent/HeaderComponent.js";
+import MainComponent from "./component/maincomponent/MainComponent.js";
 
-class index extends component {}
-export default index;
+const body = document.querySelector("body");
+
+new HeaderComponent(body);
+new MainComponent(body);
+new FooterComponent(body);
