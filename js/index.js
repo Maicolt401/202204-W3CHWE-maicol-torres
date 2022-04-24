@@ -1,4 +1,4 @@
-import component from "./component/Component.js";
+import MainComponent from "./component/maincomponent/MainComponent.js";
 
-class index extends component {}
-export default index;
+const container = document.querySelector(".container");
+new MainComponent(container);

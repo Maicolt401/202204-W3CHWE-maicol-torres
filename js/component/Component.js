@@ -1,9 +1,10 @@
-class component {
+class Component {
   element;
-  constructor(parentElement, tag, className) {
-    this.tag = tag;
-    this.className = className;
-    this.appendchild(parentElement);
+  constructor(parentElement, tag, nameCalss) {
+    this.element = document.createElement(tag);
+    this.element.className = nameCalss;
+    parentElement.append(this.element);
   }
 }
-export default component;
+
+export default Component;
