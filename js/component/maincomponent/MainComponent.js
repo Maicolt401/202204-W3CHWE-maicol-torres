@@ -19,7 +19,7 @@ class MainComponent extends Component {
         </ul>
       </nav> 
     </header>
-    <ul class="characters-list row list-unstyled">
+     <ul class="characters-list row list-unstyled">
                   <li class="character col-12 col-sm-4">
                       <div class="card character__card ">
                         <img
@@ -116,7 +116,7 @@ class MainComponent extends Component {
                       
                         </div>
                       </div>
-                  </li> 
+                 </li> 
      </ul>
     <footer>
       <nav>
