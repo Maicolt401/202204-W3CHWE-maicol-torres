@@ -9,15 +9,6 @@ div {
   padding: 5px;
 }
 
-.characters-list {
-  padding: 50px;
-  margin: 0px;
-  padding-top: 0px;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  min-height: 80vh;
-  align-items: center;
-}
 .character {
   width: 20%;
   flex-basis: auto;
@@ -32,15 +23,14 @@ div {
   height: 100%;
 }
 .character__card {
-  position: relative;
-  border: none;
-  background-color: red;
+  justify-content: center;
+  width: 200px;
+  background-color: rgba(251, 255, 0, 0.76);
   color: #fff;
-  box-shadow: 2px 2px 5px;
-}
-
-.character:nth-child(even) .character__overlay {
-  top: 100%;
+  text-align: center;
+  li {
+    text-align: initial;
+  }
 }
 
 .header {
@@ -75,5 +65,16 @@ div {
   color: #fff;
   a {
     justify-content: space-around;
+  }
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  .container {
+    max-width: max-content;
   }
 }

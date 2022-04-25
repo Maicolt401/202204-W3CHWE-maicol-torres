@@ -6,7 +6,7 @@ class PokemonAllComponent extends Component {
   type;
   weight;
   constructor(parentElement, name, image, type, weight) {
-    super(parentElement, "section", "listado");
+    super(parentElement, "section", "container");
     this.name = name;
     this.image = image;
     this.type = type;
@@ -17,7 +17,7 @@ class PokemonAllComponent extends Component {
   render() {
     this.element.innerHTML = `
         <ul class="characters-list list-unstyled">
-            <li class="character col-12 col-sm-4">
+            <li class="character">
                     <div class="card character__card ">
                             <img
                               class="character__picture card-img-top"

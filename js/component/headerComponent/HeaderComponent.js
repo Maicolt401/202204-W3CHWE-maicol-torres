@@ -8,9 +8,7 @@ class HeaderComponent extends Component {
 
   render() {
     this.element.innerHTML = `
- 
-        <h1>POKEMOS TO GUAPOS</h1>
-      
+    <marquee><h1>POKEMONS TO GUAPOS</h1></marquee>
         <navc class="header__list">
           <ul>
             <li><a href="">POKEMOS MAMADISIMOS</a></li>

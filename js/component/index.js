@@ -1,7 +1,7 @@
-import FooterComponent from "./component/FooterComponent/FooterComponent.js";
-import HeaderComponent from "./component/headerComponent/HeaderComponent.js";
-import MainComponent from "./component/maincomponent/MainComponent.js";
-import PokemonAllComponent from "./component/pokemonAllComponent/PokemonAllComponents.js";
+import FooterComponent from "./FooterComponent/FooterComponent.js";
+import HeaderComponent from "./headerComponent/HeaderComponent.js";
+import MainComponent from "./maincomponent/MainComponent.js";
+import PokemonAllComponent from "./pokemonAllComponent/PokemonAllComponents.js";
 
 const response = await fetch(
   "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=80"
